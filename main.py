@@ -1,3 +1,4 @@
+import os
 import nextcord
 from nextcord.abc import GuildChannel
 from nextcord import Interaction, SlashOption, ChannelType
@@ -14,7 +15,7 @@ import numpy as np
 import tensorflow as tf
 import tensorflow_hub as hub
 
-TOKEN = 'MTA4NjM0NDcxODEzMDEwMjI5Mg.Go2aJD.jX84U3VDd5WeYvRGKfVQC-30S5ZPeWflPIGerA'
+TOKEN = os.getenv('DISCORD_TOKEN')
 
 SUPPORTED_MIMETYPES = ["image/jpeg", "image/png", "image/webp"]
 
